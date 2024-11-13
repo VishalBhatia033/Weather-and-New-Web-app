@@ -25,7 +25,7 @@ function App() {
       const lon = await position.coords.longitude;
       try {
         const response = await fetch(
-          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=6cf281a70781c3706ca21a7e50c61193`
+          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=API_KEY`
         );
         setCurrentData(await response.json());
 
